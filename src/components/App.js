@@ -26,9 +26,9 @@ function App() {
     });
   };
 
-  const htmlData = data.map((phrases) => (
+  const htmlData = data.map((phrases, i) => (
     <>
-      <li className='phrases_item'>
+      <li className='phrases_item' key={i}>
         <label className='phrases_label'>
           "Pivot! Pivot! Pivot! Pivot! Pivot!" - Ross
         </label>
